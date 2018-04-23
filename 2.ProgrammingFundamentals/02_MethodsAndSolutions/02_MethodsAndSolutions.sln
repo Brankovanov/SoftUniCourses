@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_8_MultiplyEvenByOdds", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_09_HolidaysBetweenTwoDatesRefactoring", "Lab_09_HolidaysBetweenTwoDatesRefactoring\Lab_09_HolidaysBetweenTwoDatesRefactoring.csproj", "{4EE3129D-AB0D-4886-9989-BD680AE41768}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_10_ PriceChangeAlertRefractoring", "Lab_10_ PriceChangeAlertRefractoring\Lab_10_ PriceChangeAlertRefractoring.csproj", "{0002938A-6E68-452B-8E14-65A3DE159909}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{4EE3129D-AB0D-4886-9989-BD680AE41768}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EE3129D-AB0D-4886-9989-BD680AE41768}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EE3129D-AB0D-4886-9989-BD680AE41768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0002938A-6E68-452B-8E14-65A3DE159909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0002938A-6E68-452B-8E14-65A3DE159909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0002938A-6E68-452B-8E14-65A3DE159909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0002938A-6E68-452B-8E14-65A3DE159909}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

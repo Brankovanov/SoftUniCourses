@@ -16,16 +16,16 @@ namespace Lab_09_HolidaysBetweenTwoDatesRefactoring
 
         static void Input(DateTime startDate, DateTime endDate, int holidaysCount)
         {
-            startDate = DateTime.ParseExact(Console.ReadLine(),"d.m.yyyy", CultureInfo.InvariantCulture);
+            startDate = DateTime.ParseExact(Console.ReadLine(),"d.M.yyyy", CultureInfo.InvariantCulture);
 
-            endDate = DateTime.ParseExact(Console.ReadLine(),"d.m.yyyy", CultureInfo.InvariantCulture);
+            endDate = DateTime.ParseExact(Console.ReadLine(),"d.M.yyyy", CultureInfo.InvariantCulture);
 
             CountHolidays(startDate, endDate, holidaysCount);
         }
 
         static void CountHolidays(DateTime startDate, DateTime endDate, int holidaysCount)
         {
-            for (var date = startDate; date <= endDate; date.AddDays(1))
+            for (var date = startDate; date <= endDate; date = date.AddDays(1))
             {
                 if (date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday)
                 {
@@ -37,4 +37,3 @@ namespace Lab_09_HolidaysBetweenTwoDatesRefactoring
         }
     }
 }
-

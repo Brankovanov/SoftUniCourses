@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_05_CompareCharArra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_06_MaxSequenceEqualElements", "Exercise_06_MaxSequenceEqualElements\Exercise_06_MaxSequenceEqualElements.csproj", "{3958D5C5-2A43-4105-8412-1E4D44DD8873}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_07_MaxSequenceOfIncreasingElements", "Exercise_07_MaxSequenceOfIncreasingElements\Exercise_07_MaxSequenceOfIncreasingElements.csproj", "{7FC3AC4B-7DE8-48EA-AD54-AC79EECB698E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{3958D5C5-2A43-4105-8412-1E4D44DD8873}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3958D5C5-2A43-4105-8412-1E4D44DD8873}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3958D5C5-2A43-4105-8412-1E4D44DD8873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC3AC4B-7DE8-48EA-AD54-AC79EECB698E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC3AC4B-7DE8-48EA-AD54-AC79EECB698E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC3AC4B-7DE8-48EA-AD54-AC79EECB698E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC3AC4B-7DE8-48EA-AD54-AC79EECB698E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

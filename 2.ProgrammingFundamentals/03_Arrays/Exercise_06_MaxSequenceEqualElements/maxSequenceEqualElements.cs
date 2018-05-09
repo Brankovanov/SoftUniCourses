@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Exercise_06_MaxSequenceEqualElements
 {
@@ -18,98 +20,63 @@ namespace Exercise_06_MaxSequenceEqualElements
 
         static void CreateArray(string input)
         {
-            var sequenceArray = input.Split(' ');
+            var mainArray = input.Split(' ').Select(x => int.Parse(x)).ToArray();
 
-            CompareSequence(sequenceArray);
+            SortArray(mainArray);
         }
 
-        static void CompareSequence(string[] sequenceArray)
+        static void SortArray(int[] mainArray)
         {
-            var finalSequence = string.Empty;
-            var firstSequence = string.Empty;
-            var counter = sequenceArray.Length - 2;
+            var temporaryString = new List<int>();
+            var finalString = new List<int>();
 
-            for (var index = 0; index <= counter; index++)
+            for (var index = 0; index <= mainArray.Length - 2; index++)
             {
-                if (sequenceArray[index].Equals(sequenceArray[index + 1]))
+                if (mainArray[index + 1] == mainArray[index])
                 {
-                    firstSequence += sequenceArray[index].ToString();
+                    temporaryString.Add(mainArray[index]);
 
-                    if (firstSequence.Length > finalSequence.Length)
+                    if (index == mainArray.Length - 2)
                     {
-                        finalSequence = firstSequence;
-
-                        if (index == counter)
+                        if (finalString.Count >= temporaryString.Count)
                         {
-                            if (finalSequence.Length > 0)
-                            {
-                                Print(finalSequence + finalSequence[0].ToString());
-                            }
-                            else
-                            {
-                                Console.Write(sequenceArray[0]);
-                            }
+                            temporaryString.RemoveRange(0, temporaryString.Count);
                         }
-                    }
-                    else if (firstSequence.Length <= finalSequence.Length)
-                    {
-                        if (index == counter)
+                        else if (finalString.Count < temporaryString.Count)
                         {
-                            if (finalSequence.Length > 0)
-                            {
-                                Print(finalSequence + finalSequence[0].ToString());
-                            }
-                            else
-                            {
-                                Console.Write(sequenceArray[0]);
-                            }
+                            finalString.RemoveRange(0, finalString.Count);
+                            finalString.AddRange(temporaryString);
+                            temporaryString.RemoveRange(0, temporaryString.Count);
                         }
                     }
                 }
                 else
                 {
-                    firstSequence = string.Empty;
-
-                    if (firstSequence.Length > finalSequence.Length)
+                    if (finalString.Count >= temporaryString.Count)
                     {
-                        finalSequence = firstSequence;
-
-                        if (index == counter)
-                        {
-                            if(finalSequence.Length>0)
-                            {
-                                Print(finalSequence + finalSequence[0].ToString());
-                            }
-                            else
-                            {
-                                Console.Write(sequenceArray[0]);
-                            }                           
-                        }
+                        temporaryString.RemoveRange(0, temporaryString.Count);
                     }
-                    else if (firstSequence.Length <= finalSequence.Length)
+                    else if (finalString.Count < temporaryString.Count)
                     {
-                        if (index == counter)
-                        {
-                            if (finalSequence.Length > 0)
-                            {
-                                Print(finalSequence + finalSequence[0].ToString());
-                            }
-                            else
-                            {
-                                Console.Write(sequenceArray[0]);
-                            }
-                        }
+                        finalString.RemoveRange(0, finalString.Count);
+                        finalString.AddRange(temporaryString);
+                        temporaryString.RemoveRange(0, temporaryString.Count);
                     }
                 }
             }
+
+            Print(finalString);
         }
 
-        static void Print(string finalSequence)
-        {           
-            foreach (var ch in finalSequence)
+        static void Print(List<int> finalString)
+        {
+            foreach (var ch in finalString)
             {
                 Console.Write(ch + " ");
             }
+
+            Console.Write(int.Parse(finalString[finalString.Count - 1].ToString()));
         }
     }
 }
+

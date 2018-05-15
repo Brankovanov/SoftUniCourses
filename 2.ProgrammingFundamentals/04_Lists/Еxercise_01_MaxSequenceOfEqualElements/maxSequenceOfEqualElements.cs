@@ -27,16 +27,36 @@ namespace Еxercise_01_MaxSequenceOfEqualElements
 
         static void SortArray(List<int> mainArray)
         {
-            var temporaryString = new List<int>();
-            var finalString = new List<int>();
-
-            for (var index = 0; index <= mainArray.Count - 2; index++)
+            if (mainArray.Count == 1)
             {
-                if (mainArray[index + 1] == mainArray[index])
-                {
-                    temporaryString.Add(mainArray[index]);
+                Console.Write(mainArray[0]);
+            }
+            else
+            {
+                var temporaryString = new List<int>();
+                var finalString = new List<int>();
 
-                    if (index == mainArray.Count - 2)
+                for (var index = 0; index <= mainArray.Count - 2; index++)
+                {
+                    if (mainArray[index + 1] == mainArray[index])
+                    {
+                        temporaryString.Add(mainArray[index]);
+
+                        if (index == mainArray.Count - 2)
+                        {
+                            if (finalString.Count >= temporaryString.Count)
+                            {
+                                temporaryString.RemoveRange(0, temporaryString.Count);
+                            }
+                            else if (finalString.Count < temporaryString.Count)
+                            {
+                                finalString.RemoveRange(0, finalString.Count);
+                                finalString.AddRange(temporaryString);
+                                temporaryString.RemoveRange(0, temporaryString.Count);
+                            }
+                        }
+                    }
+                    else
                     {
                         if (finalString.Count >= temporaryString.Count)
                         {
@@ -50,22 +70,10 @@ namespace Еxercise_01_MaxSequenceOfEqualElements
                         }
                     }
                 }
-                else
-                {
-                    if (finalString.Count >= temporaryString.Count)
-                    {
-                        temporaryString.RemoveRange(0, temporaryString.Count);
-                    }
-                    else if (finalString.Count < temporaryString.Count)
-                    {
-                        finalString.RemoveRange(0, finalString.Count);
-                        finalString.AddRange(temporaryString);
-                        temporaryString.RemoveRange(0, temporaryString.Count);
-                    }
-                }
+
+                Print(finalString);
             }
 
-            Print(finalString);
         }
 
         static void Print(List<int> finalString)

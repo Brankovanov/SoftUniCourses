@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_05_HandsOfCards", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_06_UserLog", "Exercise_06_UserLog\Exercise_06_UserLog.csproj", "{2C6A2080-E5CF-4D3D-B3D5-D297737106FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_06_PopulationCounter", "Exercise_06_PopulationCounter\Exercise_06_PopulationCounter.csproj", "{EE525E91-01D3-477A-AD4F-14DE1257BD63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{2C6A2080-E5CF-4D3D-B3D5-D297737106FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C6A2080-E5CF-4D3D-B3D5-D297737106FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C6A2080-E5CF-4D3D-B3D5-D297737106FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE525E91-01D3-477A-AD4F-14DE1257BD63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE525E91-01D3-477A-AD4F-14DE1257BD63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE525E91-01D3-477A-AD4F-14DE1257BD63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE525E91-01D3-477A-AD4F-14DE1257BD63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

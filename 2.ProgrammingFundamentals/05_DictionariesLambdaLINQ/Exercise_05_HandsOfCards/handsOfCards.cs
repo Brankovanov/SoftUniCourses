@@ -25,28 +25,57 @@ namespace Exercise_05_HandsOfCards
             }
 
             listOfPlayers.Remove("JOKER");
-
-            CreateGameRecord(listOfPlayers);
+            CreateTemporaryDictionary(listOfPlayers);
         }
 
-        static void CreateGameRecord(List<string> listOfPlayers)
+        static void CreateTemporaryDictionary(List<string> listOfPlayers)
         {
-            Dictionary<string, int> gameRecord = new Dictionary<string, int>();
+            Dictionary<string, string> temporaryDictionary = new Dictionary<string, string>();
             List<string> temp = new List<string>();
-            var name = string.Empty;
-            var finalPoints = 0;
-            var card = string.Empty;
+            var playerName = string.Empty;
+            var hand = string.Empty;
 
             foreach (var player in listOfPlayers)
             {
-                temp = player.Split(' ', ',').ToList();
-                temp.RemoveAll(X => X == "");
-                name = temp[0];
+                temp = player.Split(':').ToList();
+               playerName = temp[0];
+                hand = temp[1];
 
-                for (var index = 1; index <= temp.Count - 1; index++)
+                if (temporaryDictionary.ContainsKey(playerName))
+                {
+                    temporaryDictionary[playerName] += hand;
+                }
+                else
+                {
+                    temporaryDictionary.Add(playerName, hand);
+                }
+
+                playerName = string.Empty;
+                hand = string.Empty;
+                temp.Clear();
+            }
+
+            CreateGameRecord(temporaryDictionary);
+        }
+
+        static void CreateGameRecord(Dictionary<string, string> temporaryDictionary)
+        {
+            Dictionary<string, int> gameRecord = new Dictionary<string, int>();
+            List<string> temp = new List<string>();
+            var finalPoints = 0;
+            var card = string.Empty;
+            var identification = string.Empty;
+
+            foreach (var person in temporaryDictionary)
+            {
+                temp = person.Value.Split(' ', ',').ToList();
+                temp.RemoveAll(X => X == "");
+                identification = person.Key;
+
+                for (var index = 0; index <= temp.Count - 1; index++)
                 {
                     card = temp[index];
-                    CalculatePoints(card, finalPoints, gameRecord, name);
+                    CalculatePoints(card, finalPoints, gameRecord, identification);
 
                     if (temp.Contains(card))
                     {
@@ -57,15 +86,15 @@ namespace Exercise_05_HandsOfCards
                     card = string.Empty;
                 }
 
+                identification = string.Empty;
                 temp.RemoveRange(0, temp.Count);
-                name = string.Empty;
                 finalPoints = 0;
             }
 
             Print(gameRecord);
         }
 
-        static void CalculatePoints(string card, int finalPoints, Dictionary<string, int> gameRecord, string name)
+        static void CalculatePoints(string card, int finalPoints, Dictionary<string, int> gameRecord, string identification)
         {
             var points = 0;
             card.Split();
@@ -148,28 +177,26 @@ namespace Exercise_05_HandsOfCards
             }
 
             finalPoints += points;
-            FillTheDict(gameRecord, finalPoints, name);
+            FillTheDict(gameRecord, finalPoints, identification);
         }
 
-        static void FillTheDict(Dictionary<string, int> gameRecord, int finalPoints, string name)
+        static void FillTheDict(Dictionary<string, int> gameRecord, int finalPoints, string identification)
         {
-            if (gameRecord.ContainsKey(name))
+            if (gameRecord.ContainsKey(identification))
             {
-                gameRecord[name] += finalPoints;
+                gameRecord[identification] += finalPoints;
             }
             else
             {
-                gameRecord.Add(name, finalPoints);
+                gameRecord.Add(identification, finalPoints);
             }
-
-
         }
 
         static void Print(Dictionary<string, int> gameRecord)
         {
             foreach (var entry in gameRecord)
             {
-                Console.WriteLine(entry.Key + " " + entry.Value);
+                Console.WriteLine(entry.Key + ": " + entry.Value);
             }
         }
     }

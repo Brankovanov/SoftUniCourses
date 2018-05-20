@@ -50,7 +50,7 @@ namespace Exercise_06_UserLog
                     userLog[userName] = new Dictionary<string, int>();
                 }
 
-                if(!userLog[userName].ContainsKey(ipAdress))
+                if (!userLog[userName].ContainsKey(ipAdress))
                 {
                     userLog[userName][ipAdress] = 0;
                 }
@@ -58,6 +58,11 @@ namespace Exercise_06_UserLog
                 userLog[userName][ipAdress]++;
             }
 
+            Print(userLog);
+        }
+
+        static void Print(SortedDictionary<string, Dictionary<string, int>> userLog)
+        {
             foreach (var user in userLog)
             {
                 Console.WriteLine(user.Key + ": ");
@@ -78,5 +83,3 @@ namespace Exercise_06_UserLog
         }
     }
 }
-
-

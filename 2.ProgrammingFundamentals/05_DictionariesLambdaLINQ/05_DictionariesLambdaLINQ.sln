@@ -29,6 +29,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_06_UserLog", "Exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_06_PopulationCounter", "Exercise_06_PopulationCounter\Exercise_06_PopulationCounter.csproj", "{EE525E91-01D3-477A-AD4F-14DE1257BD63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_08_LogsAggregator", "Exercise_08_LogsAggregator\Exercise_08_LogsAggregator.csproj", "{CDD99E41-A513-4EAE-9AAB-6E29CEA6630A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_09_LegendaryFarming", "Exercise_09_LegendaryFarming\Exercise_09_LegendaryFarming.csproj", "{EF629E30-8E05-4447-8439-F0B6283105F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_10_ConcertVenues", "Exercise_10_ConcertVenues\Exercise_10_ConcertVenues.csproj", "{12C01CC3-78D7-40BC-90A7-BD4EB18F1ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_11_Dragon Army", "Exercise_11_Dragon Army\Exercise_11_Dragon Army.csproj", "{2348DCA2-9B8D-48BD-96F7-F5D3837572F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +95,22 @@ Global
 		{EE525E91-01D3-477A-AD4F-14DE1257BD63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE525E91-01D3-477A-AD4F-14DE1257BD63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE525E91-01D3-477A-AD4F-14DE1257BD63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD99E41-A513-4EAE-9AAB-6E29CEA6630A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD99E41-A513-4EAE-9AAB-6E29CEA6630A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD99E41-A513-4EAE-9AAB-6E29CEA6630A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD99E41-A513-4EAE-9AAB-6E29CEA6630A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF629E30-8E05-4447-8439-F0B6283105F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF629E30-8E05-4447-8439-F0B6283105F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF629E30-8E05-4447-8439-F0B6283105F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF629E30-8E05-4447-8439-F0B6283105F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C01CC3-78D7-40BC-90A7-BD4EB18F1ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C01CC3-78D7-40BC-90A7-BD4EB18F1ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C01CC3-78D7-40BC-90A7-BD4EB18F1ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C01CC3-78D7-40BC-90A7-BD4EB18F1ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2348DCA2-9B8D-48BD-96F7-F5D3837572F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2348DCA2-9B8D-48BD-96F7-F5D3837572F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2348DCA2-9B8D-48BD-96F7-F5D3837572F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2348DCA2-9B8D-48BD-96F7-F5D3837572F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

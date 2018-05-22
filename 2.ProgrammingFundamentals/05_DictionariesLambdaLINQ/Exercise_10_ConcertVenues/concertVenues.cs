@@ -126,7 +126,3 @@ namespace Exercise_10_ConcertVenues
         }
     }
 }
-
-
-
-//POPRAVKA

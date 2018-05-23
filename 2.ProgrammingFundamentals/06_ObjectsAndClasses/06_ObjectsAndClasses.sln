@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_04_DistanceBetweenTwoPo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_05_ClosestPoints", "Lab_05_ClosestPoints\Lab_05_ClosestPoints.csproj", "{B40D2687-D672-4028-BE1C-5D843A378D10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_06_RectanglePosition", "Lab_06_RectanglePosition\Lab_06_RectanglePosition.csproj", "{1CF9C574-42D2-4369-A0C2-04EC5B93218A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_07_SalesReport", "Lab_07_SalesReport\Lab_07_SalesReport.csproj", "{419F3641-7AC9-4576-8D4E-252FDA759104}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{B40D2687-D672-4028-BE1C-5D843A378D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B40D2687-D672-4028-BE1C-5D843A378D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B40D2687-D672-4028-BE1C-5D843A378D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF9C574-42D2-4369-A0C2-04EC5B93218A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF9C574-42D2-4369-A0C2-04EC5B93218A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF9C574-42D2-4369-A0C2-04EC5B93218A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF9C574-42D2-4369-A0C2-04EC5B93218A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419F3641-7AC9-4576-8D4E-252FDA759104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419F3641-7AC9-4576-8D4E-252FDA759104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419F3641-7AC9-4576-8D4E-252FDA759104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419F3641-7AC9-4576-8D4E-252FDA759104}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

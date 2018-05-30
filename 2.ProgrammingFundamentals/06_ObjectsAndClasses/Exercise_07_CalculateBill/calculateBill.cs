@@ -139,6 +139,12 @@ namespace Exercise_07_CalculateBill
             }
         }
 
+        public Order()
+        {
+            this.BarCard = barCard;
+            this.ClientsOrders = clientsOrders;
+        }
+
         //Изчислява и отоечатва индивидуалните сметки на клиентите и общата сметка.
         public void CalculateBill()
         {
@@ -167,7 +173,7 @@ namespace Exercise_07_CalculateBill
                         if (counter == client.Value.Count - 1)
                         {
                             Console.WriteLine("Bill: " + String.Format("{0:0.00}", bill));
-                        }                   
+                        }
                     }
 
                     counter++;

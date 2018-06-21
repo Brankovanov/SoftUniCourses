@@ -20,41 +20,53 @@ namespace Exercise_09_LegendaryFarming
             while (quantity == 0)
             {
                 var loot = Console.ReadLine().ToLower();
-                bagOfLoot = loot.Split(' ').ToList();
+                bagOfLoot = loot.Split(' ').Select(x => x.Trim()).ToList();
                 var material = string.Empty;
 
                 for (var item = 1; item <= bagOfLoot.Count - 1; item += 2)
                 {
-                    if (cashOfLoot.ContainsKey(bagOfLoot[item]))
+                    var l = bagOfLoot[item];
+                    if (cashOfLoot.ContainsKey(l))
                     {
-                        cashOfLoot[bagOfLoot[item]] += int.Parse(bagOfLoot[item - 1]);                     
 
-                        try
+                        cashOfLoot[l] += int.Parse(bagOfLoot[item - 1]);
+
+
+                        if (l == "shards" && cashOfLoot["shards"] >= 250)
                         {
-                            if (cashOfLoot["shards"] >= 250 || cashOfLoot["fragments"] >= 250 || cashOfLoot["motes"] >= 250)
-                            {
-                                quantity++;
-                                break;
-                            }
+                            quantity++;
+                            break;
                         }
-                        catch (KeyNotFoundException)
+                        else if (l == "fragments" && cashOfLoot["fragments"] >= 250)
                         {
+                            quantity++;
+                            break;
+                        }
+                        else if (l == "motes" && cashOfLoot["motes"] >= 250)
+                        {
+                            quantity++;
+                            break;
                         }
                     }
                     else
                     {
                         cashOfLoot.Add(bagOfLoot[item], int.Parse(bagOfLoot[item - 1]));
 
-                        try
+
+                        if (l == "shards" && cashOfLoot["shards"] >= 250)
                         {
-                            if (cashOfLoot["shards"] >= 250 || cashOfLoot["fragments"] >= 250 || cashOfLoot["motes"] >= 250)
-                            {
-                                quantity++;
-                                break;
-                            }
+                            quantity++;
+                            break;
                         }
-                        catch (KeyNotFoundException)
+                        else if (l == "fragments" && cashOfLoot["fragments"] >= 250)
                         {
+                            quantity++;
+                            break;
+                        }
+                        else if (l == "motes" && cashOfLoot["motes"] >= 250)
+                        {
+                            quantity++;
+                            break;
                         }
                     }
                 }
@@ -67,7 +79,7 @@ namespace Exercise_09_LegendaryFarming
         {
             SortedDictionary<string, int> remainingLegendary = new SortedDictionary<string, int>();
 
-            if (cashOfLoot["shards"] >= 250)
+            if (cashOfLoot.ContainsKey("shards") && cashOfLoot["shards"] >= 250)
             {
                 Console.WriteLine("Shadowmourne obtained!");
                 cashOfLoot["shards"] -= 250;
@@ -75,13 +87,13 @@ namespace Exercise_09_LegendaryFarming
                 CreateRemainingLoot(remainingLegendary, cashOfLoot);
 
             }
-            else if (cashOfLoot["fragments"] >= 250)
+            else if (cashOfLoot.ContainsKey("fragments") && cashOfLoot["fragments"] >= 250)
             {
                 Console.WriteLine("Valanyr obtained!");
                 cashOfLoot["fragments"] -= 250;
                 CreateRemainingLoot(remainingLegendary, cashOfLoot);
             }
-            else if (cashOfLoot["motes"] >= 250)
+            else if (cashOfLoot.ContainsKey("motes") && cashOfLoot["motes"] >= 250)
             {
                 Console.WriteLine("Dragonwrath obtained!");
                 cashOfLoot["motes"] -= 250;

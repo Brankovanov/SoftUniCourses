@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_11_LogsAggregator"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_12_LegendaryFarming", "Exercise_12_LegendaryFarming\Exercise_12_LegendaryFarming.csproj", "{A873C233-4650-4A1F-A12F-A0AA5C11219F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_13_ConcertVenues", "Exercise_13_ConcertVenues\Exercise_13_ConcertVenues.csproj", "{2518926D-B069-4AEB-9576-FF9DFD4F6915}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{A873C233-4650-4A1F-A12F-A0AA5C11219F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A873C233-4650-4A1F-A12F-A0AA5C11219F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A873C233-4650-4A1F-A12F-A0AA5C11219F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2518926D-B069-4AEB-9576-FF9DFD4F6915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2518926D-B069-4AEB-9576-FF9DFD4F6915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2518926D-B069-4AEB-9576-FF9DFD4F6915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2518926D-B069-4AEB-9576-FF9DFD4F6915}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

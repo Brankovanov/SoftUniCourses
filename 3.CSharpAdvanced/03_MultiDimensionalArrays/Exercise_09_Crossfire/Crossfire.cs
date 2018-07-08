@@ -54,6 +54,7 @@ namespace Exercise_09_Crossfire
 
                 ExecuteCommands(r, c, radius, matrix);
                 Crumble(matrix, cols);
+
                 command = Console.ReadLine();
             }
 
@@ -67,7 +68,7 @@ namespace Exercise_09_Crossfire
             {
                 TargetInsideTheMatrix(r, c, radius, matrix);
             }
-            else if ((r < 0 || r >= matrix.Length) || (c < 0 && c >= matrix[r].Length))
+            else if ((r < 0 || r >= matrix.Length) || (c < 0 || c >= matrix[0].Length))
             {
                 TargetOutsideTheMatrix(r, c, radius, matrix);
             }
@@ -136,125 +137,164 @@ namespace Exercise_09_Crossfire
                 {
                     matrix[r][c + distance] = string.Empty;
                 }
-
             }
         }
 
         //Activates if the target is outside the matrix.
         static void TargetOutsideTheMatrix(int r, int c, int radius, string[][] matrix)
         {
-            if (r < 0 && radius + r >= 0 && (c >= 0 && c < matrix[0].Length))
+            if (r < 0 && c >= 0 && c < matrix[0].Length && radius > Math.Abs(r) - 1)
             {
-                for (var distance = 0; distance <= radius + r; distance++)
-                {
-                    if (distance <= matrix.Length - 1)
-                    {
-                        matrix[distance][c] = string.Empty;
-                    }
-                    else
-                    {
-                    //    return;
-                    }
+                ShotOverTheTarget(r, c, radius, matrix);
+            }
+            else if (r >= matrix.Length && c >= 0 && c < matrix[0].Length && radius > r - matrix.Length)
+            {
+                ShotBelowTheTarget(r, c, radius, matrix);
+            }
+            else if (c < 0 && r >= 0 && r < matrix.Length && radius > Math.Abs(c) - 1)
+            {
+                ShotLeftOfTheTarget(r, c, radius, matrix);
+            }
+            else if (c >= matrix[0].Length - 1 && r >= 0 && r < matrix.Length && radius > c - matrix[0].Length)
+            {
+                ShotRightOfTheTarget(r, c, radius, matrix);
+            }
+        }
 
+        //Activates when the shot is over the target.
+        static void ShotOverTheTarget(int r, int c, int radius, string[][] matrix)
+        {
+            if (Math.Abs(radius - Math.Abs(r)) <= matrix.Length - 1)
+            {
+                for (var distance = 0; distance <= radius - Math.Abs(r); distance++)
+                {
+                    matrix[distance][c] = string.Empty;
                 }
             }
-            else if (c < 0 || c >= matrix[0].Length)
+            else
             {
-              //  return;
-            }
-
-            if (r >= matrix.Length && r - matrix.Length - 1 < radius && (c >= 0 && c < matrix[0].Length))
-            {
-                for (var distance = 1; distance <= r - matrix.Length - 1; distance++)
+                for (var distance = 0; distance <= matrix.Length - 1; distance++)
                 {
-                    if (matrix.Length - distance >= 0)
-                    {
-                        matrix[matrix.Length - distance][c] = string.Empty;
-                    }
-                    else
-                    {
-                      //  return;
-                    }
+                    matrix[distance][c] = string.Empty;
                 }
             }
-            else if (c < 0 || c >= matrix[0].Length)
-            {
-               // return;
-            }
+        }
 
-            if ((r >= 0 && r < matrix.Length) && c < 0 && radius + c >= 0 )
+        //Activates when the shot is below the target.
+        static void ShotBelowTheTarget(int r, int c, int radius, string[][] matrix)
+        {
+            if (Math.Abs(radius - (r - matrix.Length)) <= matrix.Length - 1)
             {
-                for (var distance = 0; distance <= radius + c; distance++)
+                for (var distance = 0; distance < radius - (r - matrix.Length); distance++)
                 {
-                    if (distance <= matrix[r].Length - 1)
-                    {
-                        matrix[r][distance] = string.Empty;
-                    }
-                    else
-                    {
-                       // return;
-                    }
-
+                    matrix[matrix.Length - 1 - distance][c] = string.Empty;
                 }
             }
-            else if (r < 0 && r > matrix.Length)
+            else
             {
-              //  return;
-            }
-
-            if((r >= 0 && r < matrix.Length) && c >= matrix[r].Length && c-matrix[r].Length-1<radius)
-            {
-                for (var distance = 1; distance <= c - matrix[r].Length - 1; distance++)
+                for (var distance = 0; distance <= matrix.Length - 1; distance++)
                 {
-                    if (matrix[r].Length - distance >= 0)
-                    {
-                        matrix[r][matrix.Length - distance] = string.Empty;
-                    }
-                    else
-                    {
-                       // return;
-                    }
+                    matrix[matrix.Length - 1 - distance][c] = string.Empty;
                 }
             }
-            else if (r < 0 && r > matrix.Length)
+        }
+
+        //Activates when the shot is left from the target.
+        static void ShotLeftOfTheTarget(int r, int c, int radius, string[][] matrix)
+        {
+            if (Math.Abs(radius - Math.Abs(c)) <= matrix[r].Length - 1)
             {
-                //return;
+                for (var distance = 0; distance <= radius - Math.Abs(c); distance++)
+                {
+                    matrix[r][distance] = string.Empty;
+                }
+            }
+            else
+            {
+                for (var distance = 0; distance <= matrix[r].Length - 1; distance++)
+                {
+                    matrix[r][distance] = string.Empty;
+                }
+            }
+        }
+
+        //Activates when the shot is right from the target.
+        static void ShotRightOfTheTarget(int r, int c, int radius, string[][] matrix)
+        {
+            if (radius - Math.Abs(radius - c) <= matrix[r].Length - 1 && radius % 2 != 0)
+            {
+                for (var distance = 1; distance <= radius - Math.Abs(radius - c); distance++)
+                {
+                    matrix[r][matrix[r].Length - distance] = string.Empty;
+                }
+            }
+            else if (radius - Math.Abs(radius - c) <= matrix[r].Length - 1 && radius % 2 == 0)
+            {
+                for (var distance = 1; distance <= radius - Math.Abs(radius - c + 1); distance++)
+                {
+                    matrix[r][matrix[r].Length - distance] = string.Empty;
+                }
+            }
+            else
+            {
+                for (var distance = 0; distance <= matrix[r].Length - 1; distance++)
+                {
+                    matrix[r][matrix[r].Length - 1 - distance] = string.Empty;
+                }
             }
         }
 
         //Crumbles the matrix.
         static void Crumble(string[][] matrix, int cols)
         {
+            var lineMod = 0;
+
             for (var line = 0; line < matrix.Length; line++)
             {
                 var index = 0;
                 var tempQueue = new Queue<string>(matrix[line]);
-                matrix[line] = new string[cols];
 
-                do
+                if (tempQueue.First() == string.Empty && tempQueue.Last() == string.Empty)
                 {
-                    if (tempQueue.Peek() != string.Empty)
+                    lineMod++;
+                }
+                else
+                {
+                    matrix[line - lineMod] = new string[cols];
+
+                    do
                     {
-                        matrix[line][index] = tempQueue.Dequeue();
-                        index++;
+                        if (tempQueue.Peek() != string.Empty)
+                        {
+                            matrix[line - lineMod][index] = tempQueue.Dequeue();
+                            index++;
+                        }
+                        else
+                        {
+                            tempQueue.Dequeue();
+                        }
                     }
-                    else
+                    while (tempQueue.Count > 0);
+
+                    index = 0;
+
+                    if (lineMod > 0 && line == matrix.Length - 1)
                     {
-                        tempQueue.Dequeue();
+                        matrix[matrix.Length - 1] = new string[cols];
                     }
                 }
-                while (tempQueue.Count > 0);
-
-                index = 0;
             }
         }
 
         //Prints the matrix after the las command.
         static void PrintMatrix(string[][] matrix)
         {
-            foreach (var r in matrix)
+            foreach (var row in matrix)
             {
-                Console.WriteLine(string.Join(" ", r));
+                if (row[0] != null)
+                {
+                    Console.WriteLine(string.Join(" ", row));
+                }
             }
         }
     }

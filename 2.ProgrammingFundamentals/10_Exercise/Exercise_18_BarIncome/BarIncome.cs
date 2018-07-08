@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace Exercise_18_BarIncome
+namespace Exercise_20_BarIncomeII
 {
-    public class BarIncome
+    public class BarIncomeII
     {
         public static void Main(string[] args)
         {
@@ -35,37 +36,77 @@ namespace Exercise_18_BarIncome
         //Checks if the received order is valid.
         static void ValidateOrders(string order, List<double> priceList)
         {
-            var temp = order.Split(new char[] { '%', '|' }, StringSplitOptions.RemoveEmptyEntries);
             var namePattern = "^[A-Z]{1}[a-z]+$";
-            var productPattern = @"^[<]{1}\w+[>]$";
-            var pricePattern = @"\d+(\d|[\.]{1}\d+)[\$]{1}";
+            var productPattern = @"\w+";
+            var pricePattern = @"\d+(\d|[\.]{1}\d+)";
+            var quantityPattern = @"\d+$";
             var nameRegex = new Regex(namePattern);
             var productRegex = new Regex(productPattern);
             var priceRegex = new Regex(pricePattern);
-            var name = temp[0].Trim(' ', '%');
-            var product = temp[1];
-            product = product.Remove(product.IndexOf('>')+1, product.Length-(product.IndexOf('>') + 1)) ;
+            var quantityRagex = new Regex(quantityPattern);
+
+            var name = string.Empty;
+            var product = string.Empty;
             var quantity = 0;
             var price = string.Empty;
-
-            if (temp.Length == 4)
-            {
-                int.TryParse(temp[2], out quantity);
-                price = temp[3];
-            }
 
             var pricePerOne = 0.0;
             var orderPrice = 0.0;
 
-            if (order.StartsWith("%") && nameRegex.IsMatch(name) && productRegex.IsMatch(product) && quantity != 0 && price.EndsWith("$"))
+            if (order.StartsWith("%") && order.IndexOf('%') != order.LastIndexOf('%'))
             {
-                product = product.Trim('<', '>');
-                pricePerOne = double.Parse(priceRegex.Match(price).ToString().TrimEnd('$'));
-                orderPrice = pricePerOne * quantity;
-             
-                Console.WriteLine($"{name}: {product} - {string.Format("{0:0.00}", orderPrice)}");
+                name = order.Substring(1, order.LastIndexOf('%') - 1);
+
+                if (!nameRegex.IsMatch(name))
+                {
+                    return;
+                }
             }
 
+            if (order.Contains('<') && order.Contains('>'))
+            {
+                product = order.Substring(order.IndexOf('<') + 1, order.LastIndexOf('>') - order.IndexOf('<') - 1);
+
+                if (!productRegex.IsMatch(product))
+                {
+                    return;
+                }
+            }
+
+            var temp = order.Split('|');
+
+            try
+            {
+                int.TryParse(quantityRagex.Match(temp[1]).ToString(), out quantity);
+            }
+            catch (IndexOutOfRangeException)
+            {
+                return;
+            }
+
+            if (quantity == 0)
+            {
+                return;
+            }
+
+            price = temp[2];
+
+            if (price.Contains('$'))
+            {
+                double.TryParse(priceRegex.Match(price).ToString().TrimEnd('$'), out pricePerOne);
+            }
+            else
+            {
+                return;
+            }
+
+            if (pricePerOne == 0)
+            {
+                return;
+            }
+
+            orderPrice = pricePerOne * quantity;
+            Console.WriteLine($"{name}: {product} - {string.Format("{0:0.00}", orderPrice)}");
             priceList.Add(orderPrice);
         }
 

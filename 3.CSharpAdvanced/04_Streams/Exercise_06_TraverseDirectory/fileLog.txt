@@ -1,0 +1,8 @@
+.config
+--App.config - 0.189kb
+.cs
+--TraverseDirectory.cs - 2.73kb
+.csproj
+--Exercise_06_TraverseDirectory.csproj - 2.377kb
+.txt
+--fileLog.txt - 0.142kb

@@ -1,0 +1,557 @@
+-../Excercise_05_SlicingCompressedFiles\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.969kb
+---Excercise_05_SlicingCompressedFiles.csproj.CoreCompileInputs.cache - 0.042kb
+---Excercise_05_SlicingCompressedFiles.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Excercise_05_SlicingCompressedFiles.exe - 6.656kb
+--.pdb
+---Excercise_05_SlicingCompressedFiles.pdb - 15.872kb
+--.txt
+---Excercise_05_SlicingCompressedFiles.csproj.FileListAbsolute.txt - 1.222kb
+-../Exercise_01_OddLines\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.924kb
+---Exercise_01_OddLines.csproj.CoreCompileInputs.cache - 0.042kb
+---Exercise_01_OddLines.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Exercise_01_OddLines.exe - 5.632kb
+--.pdb
+---Exercise_01_OddLines.pdb - 13.824kb
+--.txt
+---Exercise_01_OddLines.csproj.FileListAbsolute.txt - 1.012kb
+-../Exercise_02_Numbering\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.927kb
+---Exercise_02_Numbering.csproj.CoreCompileInputs.cache - 0.042kb
+---Exercise_02_Numbering.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Exercise_02_Numbering.exe - 6.144kb
+--.pdb
+---Exercise_02_Numbering.pdb - 13.824kb
+--.txt
+---Exercise_02_Numbering.csproj.FileListAbsolute.txt - 1.026kb
+-../Exercise_03_WordCount\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.927kb
+---Exercise_03_WordCount.csproj.CoreCompileInputs.cache - 0.042kb
+---Exercise_03_WordCount.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Exercise_03_WordCount.exe - 7.168kb
+--.pdb
+---Exercise_03_WordCount.pdb - 15.872kb
+--.txt
+---Exercise_03_WordCount.csproj.FileListAbsolute.txt - 1.026kb
+-../Exercise_04_CopyBinaryFile\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.942kb
+---Exercise_04_CopyBinaryFile.csproj.CoreCompileInputs.cache - 0.042kb
+---Exercise_04_CopyBinaryFile.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Exercise_04_CopyBinaryFile.exe - 5.632kb
+--.pdb
+---Exercise_04_CopyBinaryFile.pdb - 11.776kb
+--.txt
+---Exercise_04_CopyBinaryFile.csproj.FileListAbsolute.txt - 1.096kb
+-../Exercise_06_TraverseDirectory\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.951kb
+---Exercise_06_TraverseDirectory.csproj.CoreCompileInputs.cache - 0.042kb
+---Exercise_06_TraverseDirectory.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Exercise_06_TraverseDirectory.exe - 7.68kb
+--.pdb
+---Exercise_06_TraverseDirectory.pdb - 15.872kb
+--.txt
+---Exercise_06_TraverseDirectory.csproj.FileListAbsolute.txt - 1.138kb
+-../Exercise_07_SlicingFile\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.933kb
+---Exercise_07_SlicingFile.csproj.CoreCompileInputs.cache - 0.042kb
+---Exercise_07_SlicingFile.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Exercise_07_SlicingFile.exe - 6.656kb
+--.pdb
+---Exercise_07_SlicingFile.pdb - 15.872kb
+--.txt
+---Exercise_07_SlicingFile.csproj.FileListAbsolute.txt - 1.054kb
+-../Exercise_08_Full Directory Traversal\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.972kb
+---Exercise_08_Full Directory Traversal.csproj.CoreCompileInputs.cache - 0.042kb
+---Exercise_08_Full Directory Traversal.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Exercise_08_Full Directory Traversal.exe - 8.704kb
+--.pdb
+---Exercise_08_Full Directory Traversal.pdb - 15.872kb
+--.txt
+---Exercise_08_Full Directory Traversal.csproj.FileListAbsolute.txt - 1.236kb
+-../Lab_01_ReadingFile\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.918kb
+---Lab_01_ReadingFile.csproj.CoreCompileInputs.cache - 0.042kb
+---Lab_01_ReadingFile.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Lab_01_ReadingFile.exe - 5.12kb
+--.pdb
+---Lab_01_ReadingFile.pdb - 11.776kb
+--.txt
+---Lab_01_ReadingFile.csproj.FileListAbsolute.txt - 0.984kb
+-../Lab_02_WriteToFile\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.918kb
+---Lab_02_WriteToFile.csproj.CoreCompileInputs.cache - 0.042kb
+---Lab_02_WriteToFile.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Lab_02_WriteToFile.exe - 5.632kb
+--.pdb
+---Lab_02_WriteToFile.pdb - 13.824kb
+--.txt
+---Lab_02_WriteToFile.csproj.FileListAbsolute.txt - 0.984kb
+-../Lab_03_TextToFile\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.915kb
+---Lab_03_TextToFile.csproj.CoreCompileInputs.cache - 0.042kb
+---Lab_03_TextToFile.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Lab_03_TextToFile.exe - 5.12kb
+--.pdb
+---Lab_03_TextToFile.pdb - 11.776kb
+--.txt
+---Lab_03_TextToFile.csproj.FileListAbsolute.txt - 0.97kb
+-../Lab_04_CopyFile\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.909kb
+---Lab_04_CopyFile.csproj.CoreCompileInputs.cache - 0.042kb
+---Lab_04_CopyFile.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Lab_04_CopyFile.exe - 5.12kb
+--.pdb
+---Lab_04_CopyFile.pdb - 11.776kb
+--.txt
+---Lab_04_CopyFile.csproj.FileListAbsolute.txt - 0.942kb
+-../Lab_05_InMemoryString\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.927kb
+---Lab_05_InMemoryString.csproj.CoreCompileInputs.cache - 0.042kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Lab_05_InMemoryString.exe - 5.632kb
+--.pdb
+---Lab_05_InMemoryString.pdb - 13.824kb
+--.txt
+---Lab_05_InMemoryString.csproj.FileListAbsolute.txt - 0.856kb
+-../Lab_06_SimpleWebServer\obj\Debug
+--.cache
+---DesignTimeResolveAssemblyReferencesInput.cache - 6.93kb
+---Lab_06_SimpleWebServer.csproj.CoreCompileInputs.cache - 0.042kb
+---Lab_06_SimpleWebServer.csprojResolveAssemblyReference.cache - 1.922kb
+--.cs
+---TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs - 0kb
+---TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs - 0kb
+---TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs - 0kb
+--.exe
+---Lab_06_SimpleWebServer.exe - 6.656kb
+--.pdb
+---Lab_06_SimpleWebServer.pdb - 11.776kb
+--.txt
+---Lab_06_SimpleWebServer.csproj.FileListAbsolute.txt - 1.04kb
+-../.vs\04_Streams\v15\Server\sqlite3
+--.ide
+---storage.ide - 532.48kb
+--.ide-shm
+---storage.ide-shm - 32.768kb
+--.ide-wal
+---storage.ide-wal - 4120.032kb
+--.lock
+---db.lock - 0kb
+-../Excercise_05_SlicingCompressedFiles
+--.config
+---App.config - 0.189kb
+--.cs
+---ZippingSlicedFiles.cs - 3.557kb
+--.csproj
+---Excercise_05_SlicingCompressedFiles.csproj - 2.39kb
+--.mp4
+---sliceMe.mp4 - 7164.754kb
+-../Exercise_01_OddLines
+--.config
+---App.config - 0.189kb
+--.cs
+---OddLines.cs - 0.976kb
+--.csproj
+---Exercise_01_OddLines.csproj - 2.35kb
+--.txt
+---text.txt - 0.124kb
+-../Exercise_02_Numbering
+--.config
+---App.config - 0.189kb
+--.cs
+---Numbering.cs - 1.44kb
+--.csproj
+---Exercise_02_Numbering.csproj - 2.353kb
+--.txt
+---text.txt - 0.124kb
+-../Exercise_02_Numbering\bin\Debug
+--.config
+---Exercise_02_Numbering.exe.config - 0.189kb
+--.exe
+---Exercise_02_Numbering.exe - 6.144kb
+--.pdb
+---Exercise_02_Numbering.pdb - 13.824kb
+--.txt
+---numbered.txt - 0.148kb
+-../Exercise_03_WordCount
+--.config
+---App.config - 0.189kb
+--.cs
+---WordCount.cs - 2.477kb
+--.csproj
+---Exercise_03_WordCount.csproj - 2.353kb
+--.txt
+---text.txt - 0.127kb
+---words.txt - 0.016kb
+-../Exercise_03_WordCount\bin\Debug
+--.config
+---Exercise_03_WordCount.exe.config - 0.189kb
+--.exe
+---Exercise_03_WordCount.exe - 7.168kb
+--.pdb
+---Exercise_03_WordCount.pdb - 15.872kb
+--.txt
+---result.txt - 0.03kb
+-../Exercise_04_CopyBinaryFile
+--.config
+---App.config - 0.189kb
+--.cs
+---CopyBinaryFile.cs - 1.055kb
+--.csproj
+---Exercise_04_CopyBinaryFile.csproj - 2.368kb
+--.jpg
+---Cat.jpg - 65.484kb
+---copyCat.jpg - 65.484kb
+-../Exercise_06_TraverseDirectory
+--.config
+---App.config - 0.189kb
+--.cs
+---TraverseDirectory.cs - 2.717kb
+--.csproj
+---Exercise_06_TraverseDirectory.csproj - 2.377kb
+--.txt
+---fileLog.txt - 0.161kb
+-../Exercise_07_SlicingFile
+--.config
+---App.config - 0.189kb
+--.cs
+---SlicingFile.cs - 3.021kb
+--.csproj
+---Exercise_07_SlicingFile.csproj - 2.359kb
+--.mp4
+---sliceMe.mp4 - 7164.754kb
+-../Exercise_07_SlicingFile\bin\Debug
+--
+---Part 1 - 2388.503kb
+---Part 2 - 2388.503kb
+---Part 3 - 2387.748kb
+--.config
+---Exercise_07_SlicingFile.exe.config - 0.189kb
+--.exe
+---Exercise_07_SlicingFile.exe - 6.656kb
+--.pdb
+---Exercise_07_SlicingFile.pdb - 15.872kb
+-../Exercise_08_Full Directory Traversal
+--.config
+---App.config - 0.189kb
+--.cs
+---FullDirectoryTraversal.cs - 4.052kb
+--.csproj
+---Exercise_08_Full Directory Traversal.csproj - 2.396kb
+--.txt
+---fileLog.txt - 1kb
+-../Lab_01_ReadingFile
+--.config
+---App.config - 0.189kb
+--.cs
+---ReadingFile.cs - 0.924kb
+--.csproj
+---Lab_01_ReadingFile.csproj - 2.349kb
+--.txt
+---text.txt - 0.124kb
+-../Lab_02_WriteToFile\bin\Debug
+--.config
+---Lab_02_WriteToFile.exe.config - 0.189kb
+--.exe
+---Lab_02_WriteToFile.exe - 5.632kb
+--.pdb
+---Lab_02_WriteToFile.pdb - 13.824kb
+--.txt
+---reversedText.txt - 1.453kb
+-../Lab_03_TextToFile
+--.config
+---App.config - 0.189kb
+--.cs
+---TextToFile.cs - 0.897kb
+--.csproj
+---Lab_03_TextToFile.csproj - 2.346kb
+--.txt
+---log.txt - 0.032kb
+-../Lab_04_CopyFile
+--.config
+---App.config - 0.189kb
+--.cs
+---CopyFile.cs - 1.018kb
+--.csproj
+---Lab_04_CopyFile.csproj - 2.34kb
+--.png
+---copy.png - 9.355kb
+---copyMe.png - 9.355kb
+-../Excercise_05_SlicingCompressedFiles\bin\Debug
+--.config
+---Excercise_05_SlicingCompressedFiles.exe.config - 0.189kb
+--.exe
+---Excercise_05_SlicingCompressedFiles.exe - 6.656kb
+--.pdb
+---Excercise_05_SlicingCompressedFiles.pdb - 15.872kb
+-../Exercise_01_OddLines\bin\Debug
+--.config
+---Exercise_01_OddLines.exe.config - 0.189kb
+--.exe
+---Exercise_01_OddLines.exe - 5.632kb
+--.pdb
+---Exercise_01_OddLines.pdb - 13.824kb
+-../Exercise_04_CopyBinaryFile\bin\Debug
+--.config
+---Exercise_04_CopyBinaryFile.exe.config - 0.189kb
+--.exe
+---Exercise_04_CopyBinaryFile.exe - 5.632kb
+--.pdb
+---Exercise_04_CopyBinaryFile.pdb - 11.776kb
+-../Exercise_06_TraverseDirectory\bin\Debug
+--.config
+---Exercise_06_TraverseDirectory.exe.config - 0.189kb
+--.exe
+---Exercise_06_TraverseDirectory.exe - 7.68kb
+--.pdb
+---Exercise_06_TraverseDirectory.pdb - 15.872kb
+-../Exercise_08_Full Directory Traversal\bin\Debug
+--.config
+---Exercise_08_Full Directory Traversal.exe.config - 0.189kb
+--.exe
+---Exercise_08_Full Directory Traversal.exe - 8.704kb
+--.pdb
+---Exercise_08_Full Directory Traversal.pdb - 15.872kb
+-../Lab_01_ReadingFile\bin\Debug
+--.config
+---Lab_01_ReadingFile.exe.config - 0.189kb
+--.exe
+---Lab_01_ReadingFile.exe - 5.12kb
+--.pdb
+---Lab_01_ReadingFile.pdb - 11.776kb
+-../Lab_02_WriteToFile
+--.config
+---App.config - 0.189kb
+--.cs
+---WriteToFile.cs - 1.454kb
+--.csproj
+---Lab_02_WriteToFile.csproj - 2.349kb
+-../Lab_03_TextToFile\bin\Debug
+--.config
+---Lab_03_TextToFile.exe.config - 0.189kb
+--.exe
+---Lab_03_TextToFile.exe - 5.12kb
+--.pdb
+---Lab_03_TextToFile.pdb - 11.776kb
+-../Lab_04_CopyFile\bin\Debug
+--.config
+---Lab_04_CopyFile.exe.config - 0.189kb
+--.exe
+---Lab_04_CopyFile.exe - 5.12kb
+--.pdb
+---Lab_04_CopyFile.pdb - 11.776kb
+-../Lab_05_InMemoryString
+--.config
+---App.config - 0.189kb
+--.cs
+---InMemoryString.cs - 0.961kb
+--.csproj
+---Lab_05_InMemoryString.csproj - 2.358kb
+-../Lab_05_InMemoryString\bin\Debug
+--.config
+---Lab_05_InMemoryString.exe.config - 0.189kb
+--.exe
+---Lab_05_InMemoryString.exe - 5.632kb
+--.pdb
+---Lab_05_InMemoryString.pdb - 13.824kb
+-../Lab_06_SimpleWebServer
+--.config
+---App.config - 0.189kb
+--.cs
+---SimpleWebServer.cs - 1.297kb
+--.csproj
+---Lab_06_SimpleWebServer.csproj - 2.361kb
+-../Lab_06_SimpleWebServer\bin\Debug
+--.config
+---Lab_06_SimpleWebServer.exe.config - 0.189kb
+--.exe
+---Lab_06_SimpleWebServer.exe - 6.656kb
+--.pdb
+---Lab_06_SimpleWebServer.pdb - 11.776kb
+-../.vs\04_Streams\v15
+--.suo
+---.suo - 273.92kb
+-../Excercise_05_SlicingCompressedFiles\Properties
+--.cs
+---AssemblyInfo.cs - 1.477kb
+-../Exercise_01_OddLines\Properties
+--.cs
+---AssemblyInfo.cs - 1.447kb
+-../Exercise_02_Numbering\Properties
+--.cs
+---AssemblyInfo.cs - 1.449kb
+-../Exercise_03_WordCount\Properties
+--.cs
+---AssemblyInfo.cs - 1.449kb
+-../Exercise_04_CopyBinaryFile\Properties
+--.cs
+---AssemblyInfo.cs - 1.459kb
+-../Exercise_06_TraverseDirectory\Properties
+--.cs
+---AssemblyInfo.cs - 1.465kb
+-../Exercise_07_SlicingFile\Properties
+--.cs
+---AssemblyInfo.cs - 1.453kb
+-../Exercise_08_Full Directory Traversal\Properties
+--.cs
+---AssemblyInfo.cs - 1.479kb
+-../Lab_01_ReadingFile\Properties
+--.cs
+---AssemblyInfo.cs - 1.443kb
+-../Lab_02_WriteToFile\Properties
+--.cs
+---AssemblyInfo.cs - 1.443kb
+-../Lab_03_TextToFile\Properties
+--.cs
+---AssemblyInfo.cs - 1.441kb
+-../Lab_04_CopyFile\Properties
+--.cs
+---AssemblyInfo.cs - 1.437kb
+-../Lab_05_InMemoryString\Properties
+--.cs
+---AssemblyInfo.cs - 1.449kb
+-../Lab_06_SimpleWebServer\Properties
+--.cs
+---AssemblyInfo.cs - 1.451kb
+-../.vs
+-../.vs\04_Streams
+-../.vs\04_Streams\v15\Server
+-../Excercise_05_SlicingCompressedFiles\bin
+-../Excercise_05_SlicingCompressedFiles\bin\Release
+-../Excercise_05_SlicingCompressedFiles\destination
+-../Excercise_05_SlicingCompressedFiles\destination\restored
+-../Excercise_05_SlicingCompressedFiles\obj
+-../Excercise_05_SlicingCompressedFiles\obj\Debug\TempPE
+-../Exercise_01_OddLines\bin
+-../Exercise_01_OddLines\bin\Release
+-../Exercise_01_OddLines\obj
+-../Exercise_01_OddLines\obj\Debug\TempPE
+-../Exercise_02_Numbering\bin
+-../Exercise_02_Numbering\bin\Release
+-../Exercise_02_Numbering\obj
+-../Exercise_02_Numbering\obj\Debug\TempPE
+-../Exercise_03_WordCount\bin
+-../Exercise_03_WordCount\bin\Release
+-../Exercise_03_WordCount\obj
+-../Exercise_03_WordCount\obj\Debug\TempPE
+-../Exercise_04_CopyBinaryFile\bin
+-../Exercise_04_CopyBinaryFile\bin\Release
+-../Exercise_04_CopyBinaryFile\obj
+-../Exercise_04_CopyBinaryFile\obj\Debug\TempPE
+-../Exercise_06_TraverseDirectory\bin
+-../Exercise_06_TraverseDirectory\bin\Release
+-../Exercise_06_TraverseDirectory\obj
+-../Exercise_06_TraverseDirectory\obj\Debug\TempPE
+-../Exercise_07_SlicingFile\bin
+-../Exercise_07_SlicingFile\bin\Release
+-../Exercise_07_SlicingFile\destination
+-../Exercise_07_SlicingFile\destination\restored
+-../Exercise_07_SlicingFile\obj
+-../Exercise_07_SlicingFile\obj\Debug\TempPE
+-../Exercise_08_Full Directory Traversal\bin
+-../Exercise_08_Full Directory Traversal\bin\Release
+-../Exercise_08_Full Directory Traversal\obj
+-../Exercise_08_Full Directory Traversal\obj\Debug\TempPE
+-../Lab_01_ReadingFile\bin
+-../Lab_01_ReadingFile\bin\Release
+-../Lab_01_ReadingFile\obj
+-../Lab_01_ReadingFile\obj\Debug\TempPE
+-../Lab_02_WriteToFile\bin
+-../Lab_02_WriteToFile\bin\Release
+-../Lab_02_WriteToFile\obj
+-../Lab_02_WriteToFile\obj\Debug\TempPE
+-../Lab_03_TextToFile\bin
+-../Lab_03_TextToFile\bin\Release
+-../Lab_03_TextToFile\obj
+-../Lab_03_TextToFile\obj\Debug\TempPE
+-../Lab_04_CopyFile\bin
+-../Lab_04_CopyFile\bin\Release
+-../Lab_04_CopyFile\obj
+-../Lab_04_CopyFile\obj\Debug\TempPE
+-../Lab_05_InMemoryString\bin
+-../Lab_05_InMemoryString\bin\Release
+-../Lab_05_InMemoryString\obj
+-../Lab_05_InMemoryString\obj\Debug\TempPE
+-../Lab_06_SimpleWebServer\bin
+-../Lab_06_SimpleWebServer\bin\Release
+-../Lab_06_SimpleWebServer\obj
+-../Lab_06_SimpleWebServer\obj\Debug\TempPE

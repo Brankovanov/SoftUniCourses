@@ -27,7 +27,7 @@ namespace Exercise_03_NumberOfTwoByTwoSquares
 
             for (var r = 0; r < rows; r++)
             {
-                var row = Console.ReadLine().Split(' ').Select(x => x.Trim()).ToArray();
+                var row = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
                 matrix[r] = row;
             }
 

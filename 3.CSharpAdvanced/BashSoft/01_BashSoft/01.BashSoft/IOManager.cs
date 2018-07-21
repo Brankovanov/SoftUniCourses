@@ -41,10 +41,10 @@ namespace _01.BashSoft
                         subFolder.Enqueue(directoryPath);
                     }
                 }
-                catch(UnauthorizedAccessException)
+                catch (UnauthorizedAccessException)
                 {
                     OutputWriter.DisplayExceotions(ExceptionMessages.UnauthorizedAccessExceptionMessage);
-                }             
+                }
             }
         }
 
@@ -57,16 +57,16 @@ namespace _01.BashSoft
             {
                 Directory.CreateDirectory(path);
             }
-            catch(ArgumentException)
+            catch (ArgumentException)
             {
                 OutputWriter.DisplayExceotions(ExceptionMessages.ForbiddenSymbolsContainedInName);
-            }       
+            }
         }
 
         //Changes the relative path of current directory.
         public static void ChangeCurrentDirectoryRelative(string relativePath)
         {
-            if(relativePath == "..")
+            if (relativePath == "..")
             {
                 try
                 {
@@ -75,7 +75,7 @@ namespace _01.BashSoft
                     var newPath = currentPath.Substring(0, indexOfLastSlash);
                     SessionData.currentPath = newPath;
                 }
-                catch(ArgumentOutOfRangeException)
+                catch (ArgumentOutOfRangeException)
                 {
                     OutputWriter.DisplayExceotions(ExceptionMessages.UnableToGoHigherInPartitionHierarchy);
                 }
@@ -91,7 +91,7 @@ namespace _01.BashSoft
         //Change the absolute path of the current directory
         public static void ChangeCurrentDirectoryAbsolute(string absolutePath)
         {
-            if(!Directory.Exists(absolutePath))
+            if (!Directory.Exists(absolutePath))
             {
                 OutputWriter.DisplayExceotions(ExceptionMessages.InvalidPath);
             }

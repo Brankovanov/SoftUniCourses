@@ -28,6 +28,7 @@ namespace Exercise_12_TriFunction
                 if (checkVolume(name, volume) != null)
                 {
                     output += checkVolume(name, volume) + " ";
+                    break;
                 }
             }
 

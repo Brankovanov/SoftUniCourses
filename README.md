@@ -34,3 +34,10 @@ Contents:
 - Regular Expressions.<br />
 - Functional Programming.<br />
 - Build in query methods - LINQ.<br />
+
+4. C# OOP Basics - the course establishes the basic principles of the Object-Oriented Programming. Working with classes and object, establishing class hierarchies, abstraction, encapsulation, inheritance and polymorphism. Also, concepts like event-driven programming, functional programming, exception handling and basic design-patterns will be covered.
+
+- Defining classes.<br />
+- Encapsulation.<br />
+- Inheritance.<br />
+- Polymorphism.<br />

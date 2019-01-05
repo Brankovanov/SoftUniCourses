@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expression</title>
+</head>
+<body>
+<div>
+<label onclick="calculate()">Result: </label>
+<span id="result"></span>
+</div>
+    <script>
+        function calculate()
+        {
+            let result = document.getElementById("result");
+             result.innerText = ((30+25)/3*(35-14-12))**2;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<div>
+    <label for="">Number One  </label>
+    <input type="number" id="num1">
+</div>
+<div>
+    <label for="">Number Two</label>
+    <input type="number" id="num2">
+</div>
+<button onclick="sum()">Sum</button>
+<div>
+    <label>Result:</label>
+    <span id="result"></span>
+</div>
+<script>
+    function sum() {
+        let num1 = Number(document.getElementById("num1").value);
+        let num2 = Number(document.getElementById("num2").value);
+        let result = document.getElementById("result");
+        result.innerText =num1+num2;
+    }
+</script>
+</body>
+</html>

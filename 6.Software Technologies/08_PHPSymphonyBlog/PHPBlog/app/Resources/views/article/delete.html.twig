@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+<form method="post" action = "{{ path('article_delete', {'id':article.id}) }}">
+    <p style="color: red; font-size: 25px">ARE YOU SURE YOU WANT TO DELETE THIS ARTICLE?</p>
+
+    <div class="pull-right">
+        <button class="btn btn-danger btn-xs"
+          type="submit" href={{ path('article_delete',{'id':article.id}) }}>Yes &raquo;</button>
+    </div>
+
+
+
+    <div class="pull-right">
+        <a class="btn btn-default btn-xs"
+           href={{ path('user_articles') }}>No &raquo;</a>
+    </div>
+
+    {{ form_row(form._token) }}
+</form>
+{% endblock %}
+

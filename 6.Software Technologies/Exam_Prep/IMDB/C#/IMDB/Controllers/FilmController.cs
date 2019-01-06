@@ -18,55 +18,61 @@
         [Route("")]
         public IActionResult Index()
         {
-            // TODO
-            return null;
+            List<Film> films = this.dbContext.Films.ToList();
+
+            return View(films);
         }
 
         [HttpGet]
         [Route("/create")]
         public IActionResult Create()
         {
-            // TODO
-            return null;
+            return View();
         }
 
         [HttpPost]
         [Route("/create")]
         public IActionResult Create(Film film)
         {
-            // TODO
-            return null;
+            this.dbContext.Films.Add(film);
+            this.dbContext.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
         [Route("/edit/{id}")]
         public IActionResult Edit(int? id)
         {
-            return null;
+            Film film = this.dbContext.Films.Find(id);
+            return View(film);
         }
 
         [HttpPost]
         [Route("/edit/{id}")]
         public IActionResult Edit(Film film)
         {
-            // TODO
-            return null;
+            this.dbContext.Films.Update(film);
+            this.dbContext.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
         [Route("/delete/{id}")]
         public IActionResult Delete(int? id)
         {
-            // TODO
-            return null;
+            Film film = this.dbContext.Films.Find(id);
+            return View(film);
         }
 
         [HttpPost]
         [Route("/delete/{id}")]
         public IActionResult Delete(Film film)
         {
-            // TODO
-            return null;
+            this.dbContext.Films.Remove(film);
+            this.dbContext.SaveChanges();
+            return RedirectToAction(nameof(Index));
         }
     }
 }

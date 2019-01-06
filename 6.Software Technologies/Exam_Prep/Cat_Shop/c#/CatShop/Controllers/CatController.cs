@@ -3,6 +3,7 @@
     using Microsoft.AspNetCore.Mvc;
     using CatShop.Models;
     using System.Linq;
+    using System.Collections.Generic;
 
     public class CatController : Controller
     {
@@ -17,32 +18,33 @@
         [Route("")]
         public ActionResult Index()
         {
-            // TODO
-            return null;
+            List<Cat> cats = this.context.Cats.ToList();
+            return View(cats);
         }
 
         [HttpGet]
         [Route("create")]
         public ActionResult Create()
         {
-            // TODO
-            return null;
+            return View();
         }
 
         [HttpPost]
         [Route("create")]
         public ActionResult Create(Cat cat)
         {
-            // TODO
-            return null;
+            this.context.Cats.Add(cat);
+            this.context.SaveChanges();
+
+            return  RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
         [Route("edit/{id}")]
         public ActionResult Edit(int id)
         {
-            // TODO
-            return null;
+            Cat cat = this.context.Cats.Find(id);
+            return View(cat);
         }
 
         [HttpPost]
@@ -50,16 +52,19 @@
         [ValidateAntiForgeryToken]
         public ActionResult EditConfirm(int id, Cat catModel)
         {
-            // TODO
-            return null;
+            this.context.Cats.Update(catModel);
+            this.context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
         [Route("delete/{id}")]
         public ActionResult Delete(int id)
         {
-            // TODO
-            return null;
+            Cat cat = this.context.Cats.Find(id);
+
+            return View(cat);
         }
 
         [HttpPost]
@@ -67,8 +72,10 @@
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirm(int id, Cat catModel)
         {
-            // TODO
-            return null;
+            this.context.Cats.Remove(catModel);
+            this.context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

@@ -23,43 +23,58 @@ public class ProjectController {
 
 	@GetMapping("/")
 	public String index(Model model) {
-		//TODO
-		return null;
+		List<Project>projectList= this.projectRepository.findAll();
+		model.addAttribute("view","project/index");
+		model.addAttribute("projects",projectList);
+		return "base-layout";
 	}
 
 	@GetMapping("/create")
 	public String create(Model model) {
-		//TODO
-		return null;
+		model.addAttribute("view","project/create");
+		return "base-layout";
 	}
 
 	@PostMapping("/create")
 	public String createProcess(Model model, ProjectBindingModel projectBindingModel) {
-		//TODO
-		return null;
+		Project project = new Project(
+				projectBindingModel.getTitle(),
+				projectBindingModel.getDescription(),
+				projectBindingModel.getBudget()
+		);
+		this.projectRepository.saveAndFlush(project);
+		return "redirect:/";
 	}
 
 	@GetMapping("/edit/{id}")
 	public String edit(Model model, @PathVariable int id) {
-		//TODO
-		return null;
+		Project project = this.projectRepository.findOne(id);
+		model.addAttribute("view","project/edit");
+		model.addAttribute("project",project);
+		return "base-layout";
 	}
 
 	@PostMapping("/edit/{id}")
 	public String editProcess(@PathVariable int id, Model model, ProjectBindingModel projectBindingModel) {
-		//TODO
-		return null;
+		Project project = this.projectRepository.findOne(id);
+		project.setTitle(projectBindingModel.getTitle());
+		project.setDescription(projectBindingModel.getDescription());
+		project.setBudget(projectBindingModel.getBudget());
+		this.projectRepository.saveAndFlush(project);
+		return "redirect:/";
 	}
 
 	@GetMapping("/delete/{id}")
 	public String delete(Model model, @PathVariable int id) {
-		//TODO
-		return null;
+		Project project = this.projectRepository.findOne(id);
+		model.addAttribute("view","project/delete");
+		model.addAttribute("project",project);
+		return "base-layout";
 	}
 
 	@PostMapping("/delete/{id}")
 	public String deleteProcess(@PathVariable int id, ProjectBindingModel projectBindingModel) {
-		//TODO
-		return null;
+		this.projectRepository.delete(id);
+		return  "redirect:/";
 	}
 }

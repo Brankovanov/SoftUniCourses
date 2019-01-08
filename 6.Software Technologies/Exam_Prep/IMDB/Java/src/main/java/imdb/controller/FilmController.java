@@ -25,48 +25,63 @@ public class FilmController {
 	@GetMapping("/")
 	public String index(Model model) {
 
-		// TODO
-		return null;
+		List<Film>filmList=this.filmRepository.findAll();
+		model.addAttribute("view", "film/index");
+        model.addAttribute("films", filmList);
+		return "base-layout";
 	}
 
 	@GetMapping("/create")
 	public String create(Model model) {
-		// TODO
-		return null;
-
+		model.addAttribute("view","film/create");
+        return "base-layout";
 	}
 
 	@PostMapping("/create")
 	public String createProcess(Model model, FilmBindingModel filmBindingModel) {
 
-		// TODO
-		return null;
+        Film film = new Film(
+              filmBindingModel.getName(),
+                filmBindingModel.getDirector(),
+                filmBindingModel.getGenre(),
+                filmBindingModel.getYear()
+        );
+        this.filmRepository.saveAndFlush(film);
+        return "redirect:/";
 
 	}
 
 	@GetMapping("/edit/{id}")
 	public String edit(Model model, @PathVariable int id) {
-		// TODO
-		return null;
-
+		Film film = this.filmRepository.findOne(id);
+		model.addAttribute("view", "film/edit");
+		model.addAttribute("film",film);
+		return "base-layout";
 	}
 
 	@PostMapping("/edit/{id}")
 	public String editProcess(Model model, @PathVariable int id, FilmBindingModel filmBindingModel) {
-		// TODO
-		return null;
+		Film film = this.filmRepository.findOne(id);
+		film.setName(filmBindingModel.getName());
+		film.setGenre(filmBindingModel.getGenre());
+		film.setDirector(filmBindingModel.getDirector());
+		film.setYear(filmBindingModel.getYear());
+		this.filmRepository.saveAndFlush(film);
+        return "redirect:/";
 	}
 
 	@GetMapping("/delete/{id}")
 	public String delete(Model model, @PathVariable int id) {
-		// TODO
-		return null;
+		Film film = this.filmRepository.findOne(id);
+		model.addAttribute("view","film/delete");
+		model.addAttribute("film",film);
+		return "base-layout";
 	}
 
 	@PostMapping("/delete/{id}")
 	public String deleteProcess(@PathVariable int id) {
-		// TODO
-		return null;
+		this.filmRepository.delete(id);
+		return "redirect:/";
 
 	}
 }

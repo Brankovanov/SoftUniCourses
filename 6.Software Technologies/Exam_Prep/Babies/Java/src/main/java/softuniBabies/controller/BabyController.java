@@ -23,44 +23,62 @@ public class BabyController {
 
     @GetMapping("/")
     public String index(Model model) {
-        // TODO
-        return null;
+
+        List<Baby> babyList = this.babyRepository.findAll();
+        model.addAttribute("view", "baby/index");
+        model.addAttribute("babies", babyList);
+        return "base-layout";
     }
 
     @GetMapping("/create")
     public String create(Model model) {
-        // TODO
-        return null;
+        model.addAttribute("view", "baby/create");
+        return "base-layout";
     }
 
     @PostMapping("/create")
-    public String createProcess(BabyBindingModel babyBindingModel) {
-        // TODO
-        return null;
+    public String createProcess(Model model, BabyBindingModel babyBindingModel) {
+
+        Baby baby = new Baby(
+                babyBindingModel.getName(),
+                babyBindingModel.getGender(),
+                babyBindingModel.getBirthday()
+        );
+        this.babyRepository.saveAndFlush(baby);
+        return "redirect:/";
 
     }
 
     @GetMapping("/edit/{id}")
     public String edit(Model model, @PathVariable int id) {
-        // TODO
-        return null;
+        Baby baby = this.babyRepository.findOne(id);
+        model.addAttribute("view", "baby/edit");
+        model.addAttribute("baby", baby);
+        return "base-layout";
     }
 
     @PostMapping("/edit/{id}")
-    public String editProcess(BabyBindingModel babyBindingModel, @PathVariable int id) {
-        // TODO
-        return null;
+    public String editProcess(Model model, @PathVariable int id, BabyBindingModel babyBindingModel) {
+        Baby baby = this.babyRepository.findOne(id);
+        baby.setName(babyBindingModel.getName());
+        baby.setGender(babyBindingModel.getGender());
+        baby.setBirthday(babyBindingModel.getBirthday());
+        this.babyRepository.saveAndFlush(baby);
+        return "redirect:/";
     }
 
     @GetMapping("/delete/{id}")
     public String delete(Model model, @PathVariable int id) {
-        // TODO
-        return null;
+        Baby baby = this.babyRepository.findOne(id);
+        model.addAttribute("view", "baby/delete");
+        model.addAttribute("baby", baby);
+        return "base-layout";
     }
 
     @PostMapping("/delete/{id}")
     public String deleteProcess(@PathVariable int id) {
-        // TODO
-        return null;
+        this.babyRepository.delete(id);
+        return "redirect:/";
+
     }
 }

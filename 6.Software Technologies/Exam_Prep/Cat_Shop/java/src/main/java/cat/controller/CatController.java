@@ -24,49 +24,61 @@ public class CatController {
     @GetMapping("/")
     public String index(Model model) {
 
-        // TODO
-       return null;
+        List<Cat>catList=this.catRepository.findAll();
+        model.addAttribute("view", "cat/index");
+        model.addAttribute("cats", catList);
+        return "base-layout";
     }
 
     @GetMapping("/create")
     public String create(Model model) {
-
-        // TODO
-        return null;
+        model.addAttribute("view","cat/create");
+        return "base-layout";
     }
 
     @PostMapping("/create")
     public String createProcess(Model model, CatBindingModel catBindingModel) {
 
-        // TODO
-        return null;
+        Cat cat = new Cat(
+                catBindingModel.getName(),
+                catBindingModel.getNickname(),
+                catBindingModel.getPrice()
+        );
+        this.catRepository.saveAndFlush(cat);
+        return "redirect:/";
+
     }
 
     @GetMapping("/edit/{id}")
     public String edit(Model model, @PathVariable int id) {
-
-        // TODO
-        return null;
+        Cat cat = this.catRepository.findOne(id);
+        model.addAttribute("view", "cat/edit");
+        model.addAttribute("cat",cat);
+        return "base-layout";
     }
 
     @PostMapping("/edit/{id}")
-    public String editProcess(@PathVariable int id, Model model, CatBindingModel catBindingModel) {
-
-        // TODO
-        return null;
+    public String editProcess(Model model, @PathVariable int id, CatBindingModel catBindingModel) {
+        Cat cat = this.catRepository.findOne(id);
+        cat.setName(catBindingModel.getName());
+        cat.setNickname(catBindingModel.getNickname());
+        cat.setPrice(catBindingModel.getPrice());
+        this.catRepository.saveAndFlush(cat);
+        return "redirect:/";
     }
 
     @GetMapping("/delete/{id}")
     public String delete(Model model, @PathVariable int id) {
-
-        // TODO
-        return null;
+        Cat cat = this.catRepository.findOne(id);
+        model.addAttribute("view","cat/delete");
+        model.addAttribute("cat",cat);
+        return "base-layout";
     }
 
     @PostMapping("/delete/{id}")
-    public String deleteProcess(@PathVariable int id, CatBindingModel catBindingModel) {
+    public String deleteProcess(@PathVariable int id) {
+        this.catRepository.delete(id);
+        return "redirect:/";
 
-        // TODO
-        return null;
     }
 }

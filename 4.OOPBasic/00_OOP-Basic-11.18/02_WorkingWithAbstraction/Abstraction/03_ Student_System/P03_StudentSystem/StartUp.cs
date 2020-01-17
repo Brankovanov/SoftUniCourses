@@ -4,10 +4,12 @@
     {
         static void Main()
         {
+            CommandProccessor proccessor = new CommandProccessor();
             StudentSystem studentSystem = new StudentSystem();
+
             while (true)
             {
-                studentSystem.ParseCommand();
+                 proccessor.ParseCommand(studentSystem);
             }
         }
     }

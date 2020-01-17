@@ -1,0 +1,46 @@
+CREATE DATABASE OnlineStore
+
+CREATE TABLE Cities
+(
+	CityId INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(50)
+)
+
+CREATE TABLE Customers
+(
+	CustomerId INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR (50),
+	BirthDay DATE,
+	CityId INT
+	CONSTRAINT FK_Customers FOREIGN KEY (CityId) REFERENCES Cities(CityId)
+)
+
+CREATE TABLE Orders
+(
+	OrderId INT PRIMARY KEY IDENTITY,
+	CustomerId INT
+	CONSTRAINT FK_Orders FOREIGN KEY (CustomerId) REFERENCES Customers(CustomerId)
+)
+
+CREATE TABLE ItemTypes
+(
+	ItemTypeId INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR (50)
+)
+
+CREATE TABLE Item
+(
+	ItemId INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR (50),
+	ItemTypeId INT
+	CONSTRAINT FK_Item FOREIGN KEY (ItemTypeId) REFERENCES ItemTypes(ItemTypeId)
+)
+
+CREATE TABLE OrderItems
+(
+	OrderId INT,
+	ItemId INT
+	CONSTRAINT PK_OrderItems PRIMARY KEY(OrderId,ItemId),
+	CONSTRAINT FK_OrderItems_Orders FOREIGN KEY (OrderId) REFERENCES Orders(OrderId),
+	CONSTRAINT FK_OrderItems_Items FOREIGN KEY (ItemId) REFERENCES Item(ItemId)
+)

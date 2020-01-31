@@ -1,0 +1,3 @@
+quick - 4
+is - 5
+fault - 0
